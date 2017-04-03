@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lifecycle</string>
+    <string name="create_lifecycle_state">onCreate</string>
+    <string name="start_lifecycle_state">onStart</string>
+    <string name="resume_lifecycle_state">onResume</string>
+    <string name="pause_lifecycle_state">onPause</string>
+    <string name="stop_lifecycle_state">onStop</string>
+    <string name="destroy_lifecycle_state">onDestroy</string>
+</resources>
