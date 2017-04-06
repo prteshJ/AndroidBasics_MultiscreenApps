@@ -9,12 +9,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 --><!-- Layout for a single list item -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
-    android:background="@color/tan_background"
-    android:orientation="horizontal">
+    android:background="@color/tan_background">
 
     <ImageView
         android:id="@+id/image"
@@ -24,7 +23,7 @@
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
+        android:layout_height="match_parent"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
@@ -53,4 +52,18 @@
             android:textColor="@android:color/white"
             tools:text="one" />
     </LinearLayout>
-</LinearLayout>
+
+    <ImageView
+        android:id="@+id/playMusic"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_play_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground" />
+</RelativeLayout>
